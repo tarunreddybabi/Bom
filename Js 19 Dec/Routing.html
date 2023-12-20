@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hi</h1>
+    <button> Click For Other Page</button>
+    <button>Click for forward</button>
+
+
+    <script>
+        let doc1=document.getElementsByTagName("button")
+        doc1[0].addEventListener("click",()=>{
+            window.location.assign("Route2.html")
+        })
+        doc1[1].addEventListener("click",()=>{
+            window.history.forward()
+        })
+    </script>
+</body>
+</html>
